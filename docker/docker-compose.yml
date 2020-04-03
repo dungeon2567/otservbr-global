@@ -36,7 +36,6 @@ services:
       context: ./
       dockerfile: ./Dockerfile.web 
     restart: unless-stopped
-    user: www-data
     environment:
       - WEB_DOCUMENT_ROOT=/tmp/web/
       - WEB_DOCUMENT_INDEX=index.php
