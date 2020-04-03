@@ -1,3 +1,1 @@
 FROM webdevops/php-nginx:alpine-php7
-
-RUN chown -R www-data.www-data /var/www/*
