@@ -1,19 +1,19 @@
 version: "3.3"
 
 services:
-  otserver:
-    build:
-      context: ../
-      dockerfile: ./docker/Dockerfile.server
-    ports:
-      - "7171:7171"
-      - "7172:7172"
-    volumes:
-      - ../:/otserver
-    depends_on:
-      - otdb
-      - otweb
-      - otlogin
+  #otserver:
+  #  build:
+  #    context: ../
+  #    dockerfile: ./docker/Dockerfile.server
+  #  ports:
+  #    - "7171:7171"
+  #    - "7172:7172"
+  #  volumes:
+  #    - ../:/otserver
+  #  depends_on:
+  #    - otdb
+  #    - otweb
+  #    - otlogin
 
   otdb:
     container_name: otdb
