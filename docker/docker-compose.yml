@@ -32,7 +32,9 @@ services:
       - db-volume:/var/lib/mysql
   
   otweb:
-    image: webdevops/php-nginx:alpine-php7
+    build: 
+      context: ./
+      dockerfile: ./docker/Dockerfile.web 
     restart: unless-stopped
     environment:
       - WEB_DOCUMENT_ROOT=/tmp/web/
