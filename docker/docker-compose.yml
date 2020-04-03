@@ -34,7 +34,7 @@ services:
   otweb:
     build: 
       context: ./
-      dockerfile: ./docker/Dockerfile.web 
+      dockerfile: ./Dockerfile.web 
     restart: unless-stopped
     environment:
       - WEB_DOCUMENT_ROOT=/tmp/web/
